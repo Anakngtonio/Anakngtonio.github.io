@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2ff; 
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #002f6c, #0077cc); 
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #004080, #00509e); 
+    backdrop-filter: blur(10px);
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: background 0.4s ease, color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1c3d5a;
+    color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 204, 0, 0.5); 
+    border-color: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #004080, #00509e);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 25px;
+    color: white; 
+}
+
+h4 {
+	color: white;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1em;
+    color: #444; 
+}
+
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 4px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
